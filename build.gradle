@@ -3,9 +3,7 @@ buildscript {
         springBootVersion = '1.5.3.RELEASE'
     }
     repositories {
-        maven {
-            url = 'http://nexus.pagseguro.intranet/repository/public'
-        }
+        mavenCentral()
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -20,9 +18,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-    maven {
-        url = 'http://nexus.pagseguro.intranet/repository/public'
-    }
+    mavenCentral()
 }
 
 configurations {
